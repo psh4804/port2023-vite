@@ -9,8 +9,8 @@
 
     <link rel="icon" type="image/svg+xml" href="/assets/arrow-02f0d4f8.svg" />
     
-  <script type="module" crossorigin src="/assets/index-b3180d16.js"></script>
-  <link rel="stylesheet" href="/assets/index-c5d4ab7c.css">
+  <script type="module" crossorigin src="/assets/index-0274feed.js"></script>
+  <link rel="stylesheet" href="/assets/index-e1945ac1.css">
 </head>
 <body>
     <div id="skip">
@@ -412,18 +412,24 @@
     </main> 
     <!-- //main -->
 
-    <footer id="footer" role="contentinfo">
+    <footer id="footer" role="input">
         <div class="footer__inner">
-            <h2 class="footer__text">
-                <div>webstoryboy</div>
-                <div>@webs</div>
-            </h2>
             <div class="footer__info">
                 <div class="left">
                     <div class="title">
-                        <a href="#">sign up</a>
+                        <a href="#">sign in</a>
                     </div>
-                    <p class="desc">아래에 방문자 정보를 기입해주세요.</p>
+                    <p class="desc">Please enter your information<br/>방문자 정보를 기입해주세요.</p>
+                    <form id="visitorForm" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfl9qgFfFc0b4yVHIsIeLCQ87jGclfcsa51cgjfrqhQb61oKg/formResponse" target="_self" method="post">
+                        <input type="text" id="name" name="entry.1686418904" required><br>
+                
+                        <label for="purpose">Purpose of Visit(방문목적)</label><br>
+                        <input type="text" id="purpose" name="entry.353640460" required><br>
+                
+                        <label for="phone">Phone Number(휴대폰번호)</label><br>
+                        <input type="tel" id="phone" name="entry.2087481657" required><br>
+                    <input type="submit" value="Submit">
+                    </form>
                 </div>
                 <div class="right">
                     <h3>social</h3>
@@ -470,7 +476,6 @@
         </div>
     </footer>
     <!-- //footer -->
-
     
 </body>
 </html>
