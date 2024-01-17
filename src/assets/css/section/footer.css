@@ -15,10 +15,10 @@
 .footer__info {
     display: flex;
     justify-content: space-between;
-    margin: 100px 0;
+    margin: 50px 0;
 }
 .footer__info .left {
-    width: 40%;
+    width: 70%;
 }
 .footer__info .left .title {
     border-top: 2px solid var(--black);
@@ -37,6 +37,11 @@
 .footer__info .left .desc {
     font-size: 20px;
     padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.footer__info .left .name {
+    font-size: 20px;
 }
 
 .footer__info .right h3 {
@@ -87,7 +92,7 @@ input[type="tel"] {
 
 input[type="submit"] {
     width: 100%;
-    background-color: #4CAF50; /* 배경색 */
+    background-color: var(--blue300); /* 배경색 */
     color: white; /* 글자색 */
     padding: 14px 20px;
     margin: 8px 0;
@@ -98,7 +103,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049; /* 호버 시 배경색 변경 */
+    background-color: var(--blue200); /* 호버 시 배경색 변경 */
 }
 
 input[type="text"]:focus,
