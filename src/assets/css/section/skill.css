@@ -1,4 +1,4 @@
-.slkll__inner {
+.skill__inner {
     padding: 16px;
     display: flex;
     justify-content: space-between;
@@ -8,20 +8,27 @@
     top: 70px;
     left: 0;
     width: 48%;
-    height: 5vw;
+    height: 20%;
     font-size: 4vw;
     font-weight: 900;
     line-height: 1.6;
     font-family: var(--mainKor-font);
     text-transform: uppercase;
     color: var(--black100);
-    border-bottom: 0.3vw solid var(--black100);
+    border-bottom: 0.3vw solid var(--black);
+
 }
+.skill__title ellipse {
+    border-bottom: 0.3vw solid var(--black);
+    width: 100;
+}
+
 .skill__title em {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 2;
 }
+
 .skill__desc {
     width: 50%;
 }
@@ -43,8 +50,18 @@
     font-size: 2rem;
 }
 
+.skill__image {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    /* 이미지의 최대 높이를 설정하여 footer에 도달하면 숨겨지도록 함 */
+    max-height: calc(100vh - 100px - height_of_footer); 
+    overflow: hidden; /* 높이를 벗어난 부분 숨김 */
+    z-index: 1;
+}
+
 @media (max-width: 800px){
-    .slkll__inner {
+    .skill__inner {
         flex-direction: column;
     }
     .skill__title {
@@ -60,5 +77,10 @@
     }
     .skill__desc span {
         font-size: 20vw;
+    }
+    .skill__title ellipse {
+        border-bottom: 0.3vw solid var(--black);
+        width: 48%;
+        display: hidden;
     }
 }

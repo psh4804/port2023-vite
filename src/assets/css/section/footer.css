@@ -1,8 +1,11 @@
 #footer {
     font-family: var(--mainKor-font);
+    position: relative;
+    z-index: 2;
 }
 .footer__inner {
-    padding: 16px;
+    padding: 50px;
+    text-align: left;
 }
 .footer__text {
     font-size: 12px;
@@ -13,12 +16,12 @@
     justify-content: space-between;
 }
 .footer__info {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    width: 100%;
     margin: 50px 0;
 }
 .footer__info .left {
-    width: 70%;
+    width: 50%;
 }
 .footer__info .left .title {
     border-top: 2px solid var(--black);
@@ -38,10 +41,6 @@
     font-size: 20px;
     padding-top: 20px;
     margin-bottom: 30px;
-}
-
-.footer__info .left .name {
-    font-size: 20px;
 }
 
 .footer__info .right h3 {
@@ -72,10 +71,10 @@
     opacity: 1;
 }
 .footer__right {
-    text-align: center;
-    text-transform: uppercase;
+    text-align: center; /* 텍스트 중앙 정렬 */
     font-size: 12px;
-    margin-bottom: 20px;
+    margin-top: 20px; /* 위쪽 여백 추가 */
+    width: 100%; /* 전체 너비 차지 */
 }
 
 input[type="text"],
@@ -113,7 +112,8 @@ input[type="tel"]:focus {
 }
 
 label {
-    font-size: 16px; /* 레이블 글꼴 크기 */
+    font-size: 20px; /* 레이블 글꼴 크기 */
+    justify-content: space-between;
     color: #333; /* 레이블 색상 */
 }
 
